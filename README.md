@@ -78,6 +78,6 @@ jupyter notebook
 7. After making changes:
 ```bash
 git add .
-git commit -m "Add class distribution analysis"
+git commit -m "message"
 git push origin your-branch-name
 ```
