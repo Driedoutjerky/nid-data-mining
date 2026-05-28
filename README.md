@@ -69,7 +69,7 @@ git checkout -b your-branch-name
 ```
 6. Run Jupyter Notebook from the project folder or from the `notebooks/` folder. 
 ```bash
-cd C:\Projects\nid-data-mining\notebooks
+cd ..\YOUR-DIRECTORY\nid-data-mining\notebooks
 jupyter notebook
 ```
 7. Run notebooks in order:
