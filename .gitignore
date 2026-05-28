@@ -215,13 +215,4 @@ marimo/_lsp/
 __marimo__/
 
 # Streamlit
-
-# Extra
-data/raw/*.csv
-data/processed/*.csv
-*.zip
-.ipynb_checkpoints/
-__pycache__/
-*.pyc
-
 .streamlit/secrets.toml

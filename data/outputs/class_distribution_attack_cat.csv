@@ -1,0 +1,12 @@
+Class,Number of Records,Percentage
+Normal,2218764,87.35
+Generic,215481,8.48
+Exploits,44525,1.75
+Fuzzers,24246,0.95
+DoS,16353,0.64
+Reconnaissance,13987,0.55
+Analysis,2677,0.11
+Backdoor,1795,0.07
+Shellcode,1511,0.06
+Backdoors,534,0.02
+Worms,174,0.01
