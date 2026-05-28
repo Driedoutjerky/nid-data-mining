@@ -2,19 +2,34 @@
 
 ## Project Overview
 
-This project applies data mining methods to the UNSW-NB15 network intrusion detection dataset.  
-The main task is binary classification: predicting whether a network traffic record is normal or malicious.
+This project applies data mining methods to the UNSW-NB15 network intrusion detection dataset.
+
+The main task is **multiclass classification**: predicting the traffic class of each network record.
 
 Target variable:
 
-- `label = 0`: Normal traffic
-- `label = 1`: Attack traffic
+```text
+attack_cat
+```
 
-The project also uses `attack_cat` for class distribution analysis, but `attack_cat` is not used as an input feature for binary classification because it would cause data leakage.
-
+### Classes
+```bash
+Normal
+Generic
+Exploits
+Fuzzers
+DoS
+Reconnaissance
+Analysis
+Backdoors
+Shellcode
+Worms
+```
 ---
 ## Note
 - **DO NOT** commit raw dataset files.
+- **DO NOT** commit processed dataset files.
+- Each member should download the raw dataset locally and run the preprocessing notebook(01, and 02) to generate their own local processed files.
 
 ## Dataset
 
@@ -47,7 +62,11 @@ nid-data-mining/
 
 ## Setup
 1. Clone the repo
-2. Download/place the original dataset files in `/data/raw`
+```bash
+git clone <repo-url>
+cd nid-data-mining
+```
+3. Download/place the original dataset files in `/data/raw`
 ```bash
 UNSW-NB15_1.csv
 UNSW-NB15_2.csv
@@ -55,11 +74,11 @@ UNSW-NB15_3.csv
 UNSW-NB15_4.csv
 NUSW-NB15_features.csv
 ```
-3. Create or activate your Python environment, set directory to the repo folder, then install dependencies.
+3. Create or activate your Python environment, set directory to the repo folder, then install dependencies. (From Anaconda Prompt or any you prefer)
 ```bash
 pip install -r requirements.txt
 ```
-4. Before starting work,
+4. Before starting work, update your local repo
 ```bash
 git pull origin main
 ```
@@ -78,8 +97,10 @@ jupyter notebook
 02_baseline_preprocessing.ipynb  --> This generates local processed data in data/processed/
 ```
 8. After making changes:
+- **DO NOT** commit raw dataset files.
+- **DO NOT** commit processed dataset files.
 ```bash
-git add .
+git add FILE-NAME
 git commit -m "Add class distribution analysis"
 git push origin your-branch-name
 ```
