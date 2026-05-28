@@ -216,3 +216,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Anaconda/Jupyter local files
+anaconda_projects/
+notebooks/anaconda_projects/
+*.db
+
+# Raw and processed data files
+data/raw/*
+data/processed/*
+
+# Keep folder placeholders
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ignore generated large CSVs in outputs, but keep folder
+data/outputs/*.csv
+!data/outputs/.gitkeep
+
+# Other
+*.zip
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
