@@ -2,7 +2,7 @@
   "best_encoding": "Ordinal Encoding",
   "imbalance_strategy": "Capped_SMOTENC_50k",
   "selection_metric": "average_attack_recall",
-  "average_attack_recall": 0.6027262104956314,
-  "macro_f1": 0.6078794058108312,
-  "attack_to_normal": 1201
+  "average_attack_recall": 0.6076646648151315,
+  "macro_f1": 0.6127884669251198,
+  "attack_to_normal": 1219
 }

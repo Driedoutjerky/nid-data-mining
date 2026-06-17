@@ -4,6 +4,6 @@
   "oversample_cap_value": 50000,
   "oversample_target": 50000,
   "selection_metric": "average_attack_recall",
-  "average_attack_recall": 0.6027,
-  "macro_f1": 0.6078794058108312
+  "average_attack_recall": 0.6077,
+  "macro_f1": 0.6127884669251198
 }
