@@ -1,0 +1,24 @@
+{
+  "best_feature_count_condition": "Top_10",
+  "num_features": 10,
+  "feature_selection_method": "Mutual Information",
+  "imbalance_strategy": "Capped_SMOTENC_50k",
+  "encoding_strategy": "Ordinal Encoding",
+  "model": "RandomForestClassifier",
+  "selection_metric": "average_attack_recall",
+  "average_attack_recall": 0.6455427181445186,
+  "macro_f1": 0.5985691646342736,
+  "attacks_predicted_as_normal": 1250,
+  "selected_features": [
+    "sbytes",
+    "sload",
+    "sttl",
+    "smeansz",
+    "ct_state_ttl",
+    "dsport",
+    "dttl",
+    "dbytes",
+    "proto",
+    "dmeansz"
+  ]
+}

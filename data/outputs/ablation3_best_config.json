@@ -1,0 +1,9 @@
+{
+  "best_feature_selection_method": "Mutual Information",
+  "imbalance_strategy": "Capped_SMOTENC_50k",
+  "encoding_strategy": "Ordinal Encoding",
+  "num_features": 30,
+  "selection_metric": "avg_attack_recall",
+  "avg_attack_recall": 0.6107579607256908,
+  "macro_f1": 0.5980029501717252
+}
