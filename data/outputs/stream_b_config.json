@@ -1,0 +1,79 @@
+{
+  "notebook": "05_stream_b_feature_group_ablation.ipynb",
+  "purpose": "Interpretation using feature group ablation",
+  "fixed_imbalance_strategy": "Capped_SMOTENC_50k",
+  "fixed_encoding_strategy": "Ordinal Encoding",
+  "model": "RandomForestClassifier",
+  "primary_metric": "average_attack_recall_excluding_Normal",
+  "secondary_metrics": [
+    "macro_f1",
+    "per_class_recall",
+    "attack_to_normal"
+  ],
+  "feature_groups": {
+    "basic_connection": [
+      "sport",
+      "dsport",
+      "sttl",
+      "dttl",
+      "swin",
+      "dwin",
+      "stcpb",
+      "dtcpb",
+      "is_sm_ips_ports"
+    ],
+    "protocol_service_state": [
+      "proto",
+      "service",
+      "state"
+    ],
+    "packet_byte": [
+      "sbytes",
+      "dbytes",
+      "Spkts",
+      "Dpkts",
+      "sloss",
+      "dloss",
+      "smeansz",
+      "dmeansz"
+    ],
+    "time_duration": [
+      "dur",
+      "Sjit",
+      "Djit",
+      "Sintpkt",
+      "Dintpkt",
+      "tcprtt",
+      "synack",
+      "ackdat"
+    ],
+    "rate_count_statistical": [
+      "Sload",
+      "Dload",
+      "ct_state_ttl",
+      "ct_srv_src",
+      "ct_srv_dst",
+      "ct_dst_ltm",
+      "ct_src_ltm",
+      "ct_src_ ltm",
+      "ct_src_dport_ltm",
+      "ct_dst_sport_ltm",
+      "ct_dst_src_ltm"
+    ],
+    "content_based": [
+      "trans_depth",
+      "res_bdy_len",
+      "ct_flw_http_mthd",
+      "is_ftp_login",
+      "ct_ftp_cmd"
+    ]
+  },
+  "outputs": [
+    "data/outputs/stream_b_feature_group_summary.csv",
+    "data/outputs/stream_b_per_class_recall.csv",
+    "data/outputs/stream_b_recall_delta_by_class.csv",
+    "reports/stream_b_group_impact.png",
+    "reports/stream_b_attack_to_normal_delta.png",
+    "reports/stream_b_recall_delta_heatmap.png"
+  ]
+}
